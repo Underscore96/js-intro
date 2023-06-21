@@ -228,20 +228,35 @@ console.log(etabeta && !gastone);
 //  console.log('fine del programma')
 
 
-const jasmine = prompt('dimmi un numero');
+// const jasmine = prompt('dimmi un numero');
 
-const isJasmineDivisibleBy3 = jasmine % 3 === 0;
+// const isJasmineDivisibleBy3 = jasmine % 3 === 0;
 
-const isJasmineDivisibleBy5 = jasmine % 5 === 0;
+// const isJasmineDivisibleBy5 = jasmine % 5 === 0;
 
-if (isJasmineDivisibleBy3 && isJasmineDivisibleBy5) {
-    alert ('FIZZBUZZ');
+// if (isJasmineDivisibleBy3 && isJasmineDivisibleBy5) {
+//     alert ('FIZZBUZZ');
     
-} else if (isJasmineDivisibleBy3){
-    alert('FIZZ');
-} else if (isJasmineDivisibleBy5){
-    alert('BUZZ');
-} else {
-    alert(jasmine);
+// } else if (isJasmineDivisibleBy3){
+//     alert('FIZZ');
+// } else if (isJasmineDivisibleBy5){
+//     alert('BUZZ');
+// } else {
+//     alert(jasmine);
+// }
+    
+// switch  control flow-------------------------------------
+
+const rapunzel = prompt('inserisci FIZZ, BUZZ o FIZZBUZZ')
+
+switch (rapunzel) {
+    case 'FIZZ':
+        alert('vuoi un numero divisibile per tre');
+        break;
+    case 'BUZZ':
+        alert('vuoi un numero divisibile per cinque');
+        break;
+    case ''
+    default:
+        break;
 }
-    
