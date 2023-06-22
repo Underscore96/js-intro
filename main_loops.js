@@ -122,21 +122,21 @@
 //     else console.log(i);
 // }
 
-var size = 8; //this is the variable setting
+// var size = 8; //this is the variable setting
 
-var board = "";//this is the empty string we're going to add either ' ' , '#' or newline
+// var board = "";//this is the empty string we're going to add either ' ' , '#' or newline
 
-for (var y = 0; y < size; y++) {   /*in the outer loop we add newline to seperate rows*/
-  for (var x = 0; x < size; x++) {/*every inner loop rappresents a line, and alternatively it's adding either ' ' or '#' to the string that's being populated*/
-    if ((x + y) % 2 == 0)
-      board += " ";
-    else
-      board += "#";
-  }
-  board += "\n";
-}
+// for (var y = 0; y < size; y++) {   /*in the outer loop we add newline to seperate rows*/
+//   for (var x = 0; x < size; x++) {/*every inner loop rappresents a line, and alternatively it's adding either ' ' or '#' to the string that's being populated*/
+//     if ((x + y) % 2 == 0)
+//       board += " ";
+//     else
+//       board += "#";
+//   }
+//   board += "\n";
+// }
 
-console.log(board);
+// console.log(board);
 
 // ---------------------------------------
 // let startingString2 ='#';
@@ -171,21 +171,48 @@ console.log(board);
 
 
 
-// versione meno easy
+// // versione meno easy
 
-const size = 4;
+// const size = 4;
 
-let chessboard = '';
+// let chessboard = '';
 
-for (let i = 0; i < size; i++) {
-    for (let j=0; j< size; j++) {
-        // se i pari {
+// for (let i = 0; i < size; i++) {
+//     for (let j=0; j< size; j++) {
+//       if (i %2 === 0) {
+//         if (j % 2 === 0) {
+//           chessboard = chessboard + ' ';
+//         } else {
+
+//           chessboard = chessboard + '#'
+//         }
+
+//       } else {
+//         if ( j % 2 === 0) {
+//           chessboard = chessboard + '#'
+
+//         } else {
+//           chessboard = chessboard + ' '
+
+//         }
+//         chessboard = chessboard + '\n'
+//       }
+//     }
+//   }
+// // const element = array[i];
+// console.log (chessboard);
+  
+       
+      
+      
+      
+      // se i pari {
             // se j è pari {
                 // aggiungo a chessboard uno spazio
             //} altrimenti {
                 //aggiungo a chessboard un cancelletto
             //}
-            altrimenti se j è pari {
+            // altrimenti se j è pari {
                 // aggiungo a chessboard un cancelletto
             // //} altrimenti {
             //     aggiungo a chessboard uno spazio
@@ -196,12 +223,51 @@ for (let i = 0; i < size; i++) {
 
 
 
-    }
-    const element = array[i];
-    console.log (chessboard);
+          //   const size = 3;
+          //   let chessboard = '';
+
+          // for(let i=0; i< size; i++){
+          //   for (let j= 0; j< size; j++) { size: 3
+          //   if (i % 2 === 0) {
+          //     if(j% 2 ===0) {
+          //       chessboard = chessboard + '+';
+            
+          //     } else {
+          //       chessboard = chessboard + '-'
+          //     }
+          //   } else {
+          //     if(j % 2===0) {
+          //       chessboard = chessboard + '+'
+          //     } else {
+          //       chessboard = chessboard + '-'
+
+          //     }
+          //   }
+          // }
+          // }
+          // console.log (chessboard);
+
+          // const size = 3;
+          // let chessboard = '';
+  
+
+
+          
+          // for(let i=0; i< size; i++){
+          //   for (let j= 0; j< size; j++) {
+          //      if ( i % 2 === 0 && j % 2 === 0) {
+          //         chessboard = chessboard + '■';
+          //      } else if ( i % 2 === 0 && j % 2 !== 0){
+          //          chessboard = chessboard + '□'
+
+          //      }
 
 
 
+          //   }
+          //   chessboard = chessboard + '\n'
+          // }
+          // console.log(chessboard);
 
 
 
