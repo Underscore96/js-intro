@@ -188,16 +188,91 @@
 
 
 
+// ---------------rivederlo, errore syntax
+
+// const qui = [3, 5, 6, 9, 111, -8, -9];
+
+// function removeNegativeAndMultiplyBy2(selectedArray){
+//     const arrayWithoutNegative = removeNegative(selectedArray);
+//     const arrayMultiplied = multiplyArrayBy2(arrayWithoutNegative);
+
+//     return multiplyArrayBy2(removeNegative(selectedArray));
+
+// }
+
+// console.log(removeNegativeAndMultiplyBy2(qui));
 
 
-const qui = [3, 5, 6, 9, 111, -8, -9];
 
-function removeNegativeAndMultiplyBy2(selectedArray){
-    const arrayWithoutNegative = removeNegative(selectedArray);
-    const arrayMultiplied = multiplyArrayBy2(arrayWithoutNegative);
 
-    return multiplyArrayBy2(removeNegative(selectedArray));
 
-}
 
-console.log(removeNegativeAndMultiplyBy2(qui));
+
+
+
+//ESERCIZI ----------------------------------------------------
+
+// const numberArray = [23, 45, 12, -8, -6, 23, 45, 1, 45, 34, 2];
+// const stringsArray = ['23', 'PIPPO', 'pluto', 'la CASA blu', 'Osvaldo', '', 'porchetta'];
+
+
+
+//1) mapping function che prende in input un array di numeri
+// e restituisce un array con tutti i numeri diminuiti di uno.
+
+//2) mapping function che prende in input un array di numeri
+// e restituisce un array con il valore assoluto dei numeri
+
+// 3) mapping function che prende in input un array di numeri 
+// e restituisce un array di stringhe con scritto 'PARI' se il numero
+// corrispondente è pari o 'DISPARI' se il mumero corrispondete è  dispari.
+
+// 4) mapping function che prende in input un array di stringhe
+// e le restituisce tutte minuscole
+
+
+//5)  mapping function che prende in input un array di stringhe
+// e restituisce un array di numeri con le lunghezze delle stringhe.
+
+
+//6)  mapping function che prende in input un array di stringhe
+// e restituisce le stringhe in formato camelCase
+
+//7)  filter function che prende in input un array di stringhe
+// e restituiscono solo quelle più lunghe di tre caratteri.
+
+
+//8)  filter function che prende in input un array di stringhe
+// e restituiscono solo quelle che contegono la lettera 'p'.
+
+// 9) filter function che prende in input un array di numeri
+// e restituiscono i positivi divisibili per 3.
+
+
+
+// 10) fare una copia della home del sito di AXIA FORMAZIONE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
