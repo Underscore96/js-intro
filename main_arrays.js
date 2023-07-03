@@ -151,6 +151,7 @@
 //         const element = selectedArray[i];
         
 //         if(element % 2 !== 0){
+    
 //             newArray.push(element);
 //         }
         

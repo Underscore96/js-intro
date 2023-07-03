@@ -207,7 +207,7 @@
 // console.log(reduce([23, 4, 4, 6, 3], sum, 0));
 
 
-const testArray4 = [4, 3, 2, 1];
+// const testArray4 = [4, 3, 2, 1];
 
 // function multiply(acc, curr){
 //     const newAcc = acc * curr;
@@ -263,54 +263,395 @@ const testArray4 = [4, 3, 2, 1];
 
 // FUNZIONI CHE RESTITUISCONO FUNZIONI
 
-function multiplyBy2(number){
-  const result = number * 2;
-  return result;
+// function multiplyBy2(number){
+//   const result = number * 2;
+//   return result;
+// }
+
+// function multiplyBy4(number){
+//     const result = number * 4;
+//     return result;
+//   }
+
+//   console.log(multiplyBy2(3));
+//   console.log(multiplyBy4(3));
+
+
+//   function multiplyGenerator(multiplicator){
+      
+//     const multiplyFunction = function(number){
+//         const result = number * multiplicator;
+//         return result;
+//     }
+
+//     return multiplyFunction;
+//   }
+
+
+//   const multiplyBy5 = multiplyGenerator(5);
+
+//   console.log(multiplyBy5(3));
+
+//   const multiplyBy10 = multiplyGenerator(10);
+
+//   console.log(multiplyBy10(3));
+
+//   console.log(multiplyGenerator(100)(3));
+
+
+
+
+//   function prefix(prefixStr){
+//     const prefixFunction = (str) => prefixStr + '' + str;
+//     return prefixFunction;
+//     // return (str) => prefixStr + ' ' + str;
+//   }
+
+// const itaPrefix = prefix('+39')
+
+// console.log(itaPrefix('3339917218'));
+
+// const frPrefix = prefix ('+33');
+
+// console.log(frPreFix('+3339917218'));
+
+
+
+
+
+
+
+// // function sumLenghtIfLast3(acc, curr, index, originalArray){
+// //   if (index >= originalArray.length -3){
+// //     return acc + curr.length;
+// //   }
+// //   return acc; 
+// // }
+
+
+// // console.log(stringArray.reduce(sumLengthIfLast3,0))
+
+
+// //SORTING ---------------------
+
+
+// const numberArray = [23, 45, 12, -8, -6, 23, 45, 1, 45, 34, 2];
+// const stringsArray = [ '23', 'PIPPO', 'pluto', 'la CASA blu', 'Osvaldo', '','porchetta'];
+
+// // stringsArray.sort();
+
+// // console.log(stringsArray);
+
+
+// // numberArray.sort();
+// // console.log(numberArray);
+
+// // const numberArray = numbersArray.map( e => e + 1);
+
+// // const newArray = numberArray.map(e => e + 1);
+
+// // console.log(newArray);
+// // console.log(numberArray);
+
+
+// // const newArray = numberArray.sort();
+// // console.log ('new', newArray);
+// // console.log ('numbers', numbersArray
+
+// function compareAscendingNumbers(n1, n2){
+//   if (n1 < n2){
+//     return -1;
+//   } else if (n1 > n2) {
+//     return +1;
+//   } else {
+//     return 0;
+//   }
+// }
+
+
+// function compareAscendingNumbers2(n1, n2){
+//   return n1 - n2;
+// }
+
+
+// function compareDescendingNumbers(n1, n2){
+//   if (n1 < n2){
+//     return +1;
+//   } else if ( n1> n2){
+//     return -1;
+//   } else {
+//     return 0;
+//   }
+// }
+
+
+
+// function compareDescendingNumbers2(n1, n2){
+//   return n2 - n1;
+// }
+
+
+// //lambda 
+// numberArray.sort((n1, n2) => n1 - n2)
+
+
+
+
+
+// numberArray.sort(compareAscendingNumbers)
+
+// console.log(numberArray);
+
+
+
+// // stringsArray.sort((s1, s2) => s1.localeCompare(s2)) SE vuoi una lambda ascending
+
+// // stringsArray.sort((s1, s2) => -s1.localeCompare(s2)) se vuoi una lambda descending
+
+
+// // console.log(stringsArray)
+
+// const student1 = {
+//   name: 'manuela',
+//   yob: 1988,
+//   marks: [10, 8, 7, 5],
+// }
+
+// const student2 = {
+//   name: 'damiano',
+//   yob: 1993,
+//   marks: [9, 8, 7, 10],
+// }
+
+// const student3 = {
+//   name: 'cesare',
+//   yob: 2003,
+//   marks: [7, 8, 7, 6],
+// }
+
+// const student4 = {
+//   name: 'isabella',
+//   yob: 1996,
+//   marks: [10, 9, 9, 10],
+// }
+
+
+// const student5 = {
+//   name: 'stefania',
+//   yob: 1996,
+//   marks: [10, 4, 7, 6],
+// }
+
+// const student6 = {
+//   name: 'ares',
+//   yob: 1993,
+//   marks: [10, 10, 10, 10],
+// }
+
+// const student7 = {
+//   name: 'stefania',
+//   yob: 2000,
+//   marks: [10, 10, 10, 10],
+// }
+
+// const student8 = {
+//   name: 'cesare',
+//   yob: 2003,
+//   marks: [9, 9, 9, 9],
+// }
+
+
+
+// const students = [student1, student2, student3, student4, student5, student6, student7, student8];
+
+// // console.log(students);
+
+// function compareStudentsByNameAscending(s1, s2){
+//   return s1.name.localeCompare(s2.name);
+
+// }
+
+
+// function compareStudentsByYobDesc(s1, s2){
+//   return s2.yob -s1.yob;
+// }
+
+
+// function compareStudentByNameAndYear(s1, s2){
+//   if (s1.name.localeCompare(s2.name) === 0){
+
+//   } else {
+//     return s1.name.localeCompare(s2.name);
+//   }
+// }
+
+
+// // se voglio lo studente piu giovane su un onominia, allora usero questa logica
+
+
+// function compareStudentsByNameAndYear(s1, s2){
+//   if (s1.name.localeCompare(s2.name) === 0){
+//     return s2.yob -s1.yob;
+
+//   } else {
+//     return s1.name.localeCompare(s2.name);
+//   }
+// }
+
+
+// function calculateMean(arrayOfNumber){
+//   const sumOfArray = arrayOfNumber.reduce((a, c)=> a + c);
+//   const mean = sumOfArray / arrayOfNumber.length;
+//   return mean;
+// }
+
+
+
+// function compareByStudentMarksMeanDescending(s1, s2){
+//  return calculateMean(s1.marks) - calculateMean(s2.marks);
+
+// }
+
+
+// function compareStudentsByNameYearAndMean(s1, s2){
+//   if (s1.name.localeCompare(s2.name) === 0){
+//     if(s2.yob -s1.yob === 0){
+
+//       return calculateMean(s2.marks) - calculateMean(s1.marks);
+//     } else {
+//       return s2.yob -s1.yob
+//     }
+
+//   } else {
+//     return s1.name.localeCompare(s2.name);
+//   }
+// }
+
+
+
+// students.sort(compareStudentsByNameYearAndMean);
+
+// // students.sort(compareByStudentMarksMeanDescending)
+
+// // students.sort(compareStudentsByYobDesc);
+
+// // students.log(compareStudentsByNameAndYear);
+
+// // students.sort(compareStudentsByNameAscending);
+
+// console.log(students);
+
+
+// FIND -----------------------------------------------------------------
+
+// const stringsArray = [ '23', 'PIPPO', 'pluto', 'la CASA blu', 'Osvaldo', '','porchetta'];
+
+// function isGreaterThan3Chars(element){
+  
+//   if (element.length > 3) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(stringsArray.filter(isGreaterThan3Chars));
+// console.log(stringsArray.find(isGreaterThan3Chars));
+
+
+// function containsCASA(element){
+//   if (element.includes('CASA')) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(stringsArray.filter(containsCASA));
+
+// console.log(stringsArray.find(containsCASA));
+
+
+// //SOME ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// function isGreaterThan30Chars(element){
+  
+//   if (element.length > 30) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(stringsArray.some(isGreaterThan3Chars));
+// console.log(stringsArray.some(isGreaterThan30Chars));
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+function acc(array) {
+    let accumulator = "";
+
+    for (let i = 0; i < array.length; i++) {
+        const char = array[i];
+
+        for (let j = 0; j < i + 1; j++) {
+            if (j === 0) {
+                accumulator +=  char.toUpperCase();
+            } else {
+                accumulator += char.toLowerCase();
+            }
+        }
+        if (i < array.length - 1) {
+           accumulator += "-";
+        }
+    }
+    return accumulator;
 }
 
-function multiplyBy4(number){
-    const result = number * 4;
-    return result;
-  }
+const string1 = "abcd"; // -> A - Bb - Ccc - Dddd
+const string2 = "RqaEzty";
+const string3 = "cWaT";
+console.log(acc(string1));
+console.log(acc(string2));
+console.log(acc(string3));
 
-  console.log(multiplyBy2(3));
-  console.log(multiplyBy4(3));
+
+  
+// --------------------------------------------------------------------------------------------------------------------------------------------
 
 
-  function multiplyGenerator(multiplicator){
-      
-    const multiplyFunction = function(number){
-        const result = number * multiplicator;
-        return result;
+
+function squaresum (acc,curr){
+
+    return  acc + curr * curr;
+    
+}
+
+const numberArray = [1,2,2]
+
+console.log('---------------',numberArray.reduce(squaresum,0));
+
+
+console.log(numberArray.reduce ((acc,curr) => acc + curr*curr, 0));
+
+function acc(numbers) {
+    let accumulator = 0;
+
+    for (number of numbers) {
+        accumulator += number*number;
+
     }
+    return accumulator;
+}
 
-    return multiplyFunction;
-  }
-
-
-  const multiplyBy5 = multiplyGenerator(5);
-
-  console.log(multiplyBy5(3));
-
-  const multiplyBy10 = multiplyGenerator(10);
-
-  console.log(multiplyBy10(3));
-
-  console.log(multiplyGenerator(100)(3));
+console.log('---------------',acc([1,2,2]));
 
 
-
-
-  function prefix(prefixStr){
-    const prefixFunction = (str) => prefixStr + '' + str;
-    return prefixFunction;
-    // return (str) => prefixStr + ' ' + str;
-  }
-
-const itaPrefix = prefix('+39')
-
-console.log(itaPrefix('3339917218'));
-
-const frPrefix = prefix ('+33');
-
-console.log(frPreFix('+3339917218'));
